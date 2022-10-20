@@ -1,0 +1,103 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.section-state-of-art {
+  // border: 8px solid yellow;
+  margin-top: 14.25rem;
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: center -10rem;
+  background-color: v.$Very-dark-blue-headings;
+  background-size: 37.5rem 31.25rem;
+  background-repeat: no-repeat;
+  height: 37.3125rem;
+  width: 100%;
+  border-radius: 0 5.9375rem 0 5.9375rem;
+  .section-container {
+    // border: 5px solid green;
+    position: relative;
+    width: 100%;
+  }
+  &__title {
+    // border: 1px solid red;
+    margin-top: -0.9375rem;
+    width: 60%;
+    margin: auto;
+    font-size: 1.6em;
+    text-align: center;
+    color: v.$White-text;
+    margin-bottom: 1.875rem;
+  }
+  &__description {
+    width: 83%;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5625rem;
+    color: v.$White-text;
+  }
+
+  @media (min-width: v.$Width-media) {
+    margin-top: unset;
+    background-size: 68.75rem 56.25rem;
+    background-position: -14.3rem -26rem;
+    display: flex;
+    flex-direction: row;
+    height: 24.8125rem;
+    .section-container {
+      // border: 5px solid green;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20.3125rem;
+    }
+    &__title {
+      flex-wrap: wrap;
+      // border: 1px solid red;
+      margin-top: unset;
+      width: 70%;
+      margin: unset;
+      text-align: left;
+      margin-bottom: 1.875rem;
+    }
+    &__description {
+      width: 92%;
+      margin: unset;
+      text-align: left;
+    }
+  }
+}
+
+.section-state-of-art-figure {
+  width: 100%;
+  &__img {
+    // border: 4px solid red;
+    position: absolute;
+    top: -10.625rem;
+    background-image: url(../images/illustration-phones.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 22rem;
+  }
+  @media (min-width: v.$Width-media) {
+    &__img {
+      top: -2.5rem;
+      left: -19%;
+      background-size: 35.625rem 37rem;
+      height: 35.625rem;
+    }
+  }
+}
+
+.section-text {
+  padding-top: 15.625rem;
+  @media (min-width: v.$Width-media) {
+    padding-top: 0;
+    // border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

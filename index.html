@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <!-- 🦢🦢🦢 -->
+    <!-- MAIN CONTAINER -->
+    <main class="main-container">
+      <!-- HEADER BLOGR -->
+      <header class="header-blogr">
+        <nav class="header-nav">
+          <img class="header-blogr__logo" src="./images/logo.svg" alt="logo" />
+          <ul class="header-blogr-menu">
+            <li class="header-blogr-menu__item product">
+              <a href="#">Product</a
+              ><img
+                id="img-product"
+                src="./images/icon-arrow-dark.svg"
+                alt="arrow dark"
+              />
+            </li>
+            <li class="header-blogr-menu__item company">
+              <a href="#">Company</a
+              ><img
+                id="img-company"
+                src="./images/icon-arrow-dark.svg"
+                alt="arrow dark"
+              />
+            </li>
+            <li class="header-blogr-menu__item connect">
+              <a href="#">Connect</a
+              ><img
+                id="img-connect"
+                src="./images/icon-arrow-light.svg"
+                alt="arrow light"
+              />
+            </li>
+          </ul>
+          <ul class="header-blogr-menu2">
+            <li class="header-blogr-menu2__item"><a href="#">Login</a></li>
+            <li class="header-blogr-menu2__item selected">
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+          <img
+            class="header-blogr__hamburger"
+            src="./images/icon-hamburger.svg"
+            alt="hamburger icon"
+          />
+          <img
+            class="header-blogr__close"
+            src="./images/icon-close.svg"
+            alt="close icon"
+          />
+          <!-- MODAL SUB-MENU -->
+          <div class="header-blogr-sub-menu">
+            <details>
+              <summary id="arrow-summary-product">
+                Product
+                <img
+                  id="arrow-product"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="arrow dark"
+                />
+              </summary>
+              <div class="header-blogr-sub-menu__backgreen">
+                <ul>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Overview</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Marketplace</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Features</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Integrations</a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary id="arrow-summary-company">
+                Company
+                <img
+                  id="arrow-company"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="arrow dark"
+                />
+              </summary>
+              <div class="header-blogr-sub-menu__backgreen">
+                <ul>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Team</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary id="arrow-summary-connect">
+                Connect
+                <img
+                  id="arrow-connect"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="arrow dark"
+                />
+              </summary>
+              <div class="header-blogr-sub-menu__backgreen">
+                <ul>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Contact</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Newsletter</a>
+                  </li>
+                  <li class="header-blogr-sub-menu__item">
+                    <a href="#">Linkedln</a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <div class="bar"></div>
+            <li class="header-blogr-sub-menu__item">
+              <a href="#">Login</a>
+            </li>
+            <li class="header-blogr-sub-menu__item selected">
+              <a href="#">Sing Up</a>
+            </li>
+          </div>
+          <!-- MODAL SUB-MENU END -->
+          <!-- MODAL SUB-MENU COMPANY -->
+          <ul class="header-blogr-sub-menu-company">
+            <li class="header-blogr-sub-menu-company__item">
+              <a href="#">About</a>
+            </li>
+            <li class="header-blogr-sub-menu-company__item">
+              <a href="#">Team</a>
+            </li>
+            <li class="header-blogr-sub-menu-company__item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="header-blogr-sub-menu-company__item">
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+          <!-- MODAL SUB-MENU END COMPANY -->
+          <!-- MODAL SUB-MENU CONNECT -->
+          <ul class="header-blogr-sub-menu-connect">
+            <li class="header-blogr-sub-menu-connect__item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="header-blogr-sub-menu-connect__item">
+              <a href="#">Newsletter</a>
+            </li>
+            <li class="header-blogr-sub-menu-connect__item">
+              <a href="#">Linkedln</a>
+            </li>
+          </ul>
+          <!-- MODAL SUB-MENU END CONNECT -->
+          <!-- MODAL SUB-MENU PRODUCT -->
+          <ul class="header-blogr-sub-menu-product">
+            <li class="header-blogr-sub-menu-product__item">
+              <a href="#">Overview</a>
+            </li>
+            <li class="header-blogr-sub-menu-product__item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="header-blogr-sub-menu-product__item">
+              <a href="#">Marketplace</a>
+            </li>
+            <li class="header-blogr-sub-menu-product__item">
+              <a href="#">Features</a>
+            </li>
+            <li class="header-blogr-sub-menu-product__item">
+              <a href="#">Integrations</a>
+            </li>
+          </ul>
+          <!-- MODAL SUB-MENU END PRODUCT -->
+        </nav>
+        <h1 class="header-blogr__title">A modern publishing platform</h1>
+        <p class="header-blogr__description">
+          Grow your audience and build your online brand
+        </p>
+        <div class="header-blogr-bottons">
+          <button class="header-blogr-bottons__btn-start">
+            Start for Free
+          </button>
+          <button class="header-blogr-bottons__btn-learn">Learn More</button>
+        </div>
+      </header>
+
+      <!-- SECTION DESIGNED FUTURE -->
+      <section class="section-designed-future">
+        <h2 class="section-designed-future__title">Designed for the future</h2>
+        <div class="container-desinged-future">
+          <div class="container-img"></div>
+          <div class="container-text">
+            <article class="container-text-article-1">
+              <h2 class="container-text-article-1__title">
+                Introducing an extensible editor
+              </h2>
+              <p class="container-text-article-1__description">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </article>
+            <article class="container-text-article-2">
+              <h2 class="container-text-article-2__title">
+                Robust content management
+              </h2>
+              <p class="container-text-article-2__description">
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION STATE OF ART -->
+      <div class="section-state-of-art">
+        <div class="section-container">
+          <figure class="section-state-of-art-figure">
+            <div class="section-state-of-art-figure__img"></div>
+          </figure>
+          <section class="section-text">
+            <h2 class="section-state-of-art__title">
+              State of the Art Infrastructure
+            </h2>
+            <p class="section-state-of-art__description">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </section>
+        </div>
+      </div>
+      <!-- SECTION FREE OPEN -->
+      <div class="section-free-open">
+        <figure class="section-free-open-figure">
+          <div class="section-free-open__picture"></div>
+        </figure>
+        <div class="section-free-open-text">
+          <section class="section-free-open-text-section-1">
+            <h2 class="section-free-open-text-section-1__title">
+              Free, open, simple
+            </h2>
+            <p class="section-free-open-text-section-1__description">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </section>
+          <section class="section-free-open-text-section-2">
+            <h2 class="section-free-open-text-section-2__title">
+              Powerful tooling
+            </h2>
+            <p class="section-free-open-text-section-2__description">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </section>
+        </div>
+      </div>
+      <!-- SECTION BLOGR -->
+      <div class="section-blogr">
+        <h2 class="section-blogr__title">Blogr</h2>
+        <div class="container-blogr">
+          <section class="section-product">
+            <h3 class="section-product__title">Product</h3>
+            <ul class="section-product-ul">
+              <li class="section-product-ul__item"><a href="#">Overview</a></li>
+              <li class="section-product-ul__item"><a href="#">Pricing</a></li>
+              <li class="section-product-ul__item">
+                <a href="#">Marketplace</a>
+              </li>
+              <li class="section-product-ul__item"><a href="#">Features</a></li>
+              <li class="section-product-ul__item">
+                <a href="#">Integrations</a>
+              </li>
+            </ul>
+          </section>
+          <section class="section-company">
+            <h3 class="section-company__title">Company</h3>
+            <ul class="section-company-ul">
+              <li class="section-company-ul__item"><a href="#">About</a></li>
+              <li class="section-company-ul__item"><a href="#">Team</a></li>
+              <li class="section-company-ul__item"><a href="#">Blog</a></li>
+              <li class="section-company-ul__item"><a href="#">Careers</a></li>
+            </ul>
+          </section>
+          <section class="section-connect">
+            <h3 class="section-connect__title">Connect</h3>
+            <ul class="section-connect-ul">
+              <li class="section-connect-ul__item"><a href="#">Contact</a></li>
+              <li class="section-connect-ul__item">
+                <a href="#">Newsletter</a>
+              </li>
+              <li class="section-connect-ul__item"><a href="#">LinkedIn</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#" target="_blank">Pablo Belda</a>.
+    </footer>
+    <!-- OWN JS  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

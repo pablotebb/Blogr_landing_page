@@ -1,0 +1,50 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.section-blogr {
+  background-color: v.$Very-dark-black-blue-footer-background;
+  height: 40.625rem;
+  border-radius: 0 5.625rem 0 0;
+  &__title {
+    font-size: 2em;
+    color: v.$White-text;
+    text-align: center;
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  @media (min-width: v.$Width-media) {
+    // border: 1px solid yellow;
+    height: 22.3125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    &__title {
+      height: 14.375rem;
+      // border: 1px solid red;
+    }
+    .container-blogr {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%;
+      margin-left: -400px;
+    }
+    .section-product,
+    .section-company,
+    .section-connect {
+      // border: 5px solid red;
+      margin-top: 7.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 300px;
+    }
+  }
+}
+
+@include m.list_blogr(1);
+
+@include m.list_blogr(2);
+
+@include m.list_blogr(3);

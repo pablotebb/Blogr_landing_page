@@ -1,0 +1,70 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.section-free-open {
+  &__picture {
+    // border: 1px solid red;
+    background-image: url(../images/illustration-laptop-mobile.svg);
+    background-position: center center;
+    background-size: 28.125rem 20.625rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 20rem;
+  }
+  @media (min-width: v.$Width-media) {
+    // border: 5px solid black;
+    width: 99%;
+    margin-top: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__picture {
+      // border: 5px solid yellow;
+      background-image: url(../images/illustration-laptop-desktop.svg);
+      background-size: 42.75rem 31.25rem;
+      background-position-x: -12.1875rem;
+      width: 100%;
+      height: 50.3125rem;
+    }
+  }
+  @media (min-width: 81.25rem) {
+    // background-color: red;
+    &__picture {
+      // border: 5px solid yellow;
+      background-image: url(../images/illustration-laptop-desktop.svg);
+      background-size: 61.5rem 50rem;
+      background-position-x: -17.5rem;
+      width: 100%;
+      height: 50.3125rem;
+    }
+  }
+}
+
+.section-free-open-figure {
+  @media (min-width: v.$Width-media) {
+    flex: 2;
+  }
+}
+
+.section-free-open-text {
+  @media (min-width: v.$Width-media) {
+    flex: 1;
+  }
+}
+
+.section-free-open-text-section-1 {
+  @include m.article_desinged_future(center);
+  @media (min-width: v.$Width-media) {
+    margin-top: 3.125rem;
+    @include m.article_desinged_future(left, 3.75rem);
+    margin-left: -11.25rem;
+  }
+}
+
+.section-free-open-text-section-2 {
+  @include m.article_desinged_future(center);
+  @media (min-width: v.$Width-media) {
+    @include m.article_desinged_future(left, 3.75rem);
+    margin-left: -11.25rem;
+  }
+}

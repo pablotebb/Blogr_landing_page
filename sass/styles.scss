@@ -1,0 +1,20 @@
+@use "variables" as v;
+@use "initial";
+@use "mixins" as m;
+@use "footer";
+@use "header_blogr";
+@use "section_designed_future";
+@use "section_state_of_art";
+@use "section_free_open";
+@use "section_blogr";
+
+.main-container {
+  // border: 8px solid red;
+  min-width: v.$Width-mobile;
+  height: v.$Height-mobile;
+  margin: 0 auto 3.75rem;
+  @media (min-width: v.$Width-media) {
+    width: v.$Width-desktop;
+    height: v.$Height-desktop;
+  }
+}
